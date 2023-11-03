@@ -22,7 +22,7 @@ const NavBar = () => {
         {links.map((link) => {
           return (
             <Link
-              key="href"
+              key={link.href}
               href={link.href}
               className={classnames({
                 "text-zinc-900": link.href === currentPath,
